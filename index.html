@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/44140d143f.js" crossorigin="anonymous"></script>
+    <title>Welcome to Fümblrr!</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class = "container">
+        <nav>
+            <img src = "images/logo.png" class = "logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </div>
+    <div class = "header-text">
+        <p>EE Undergraduate Student</p>
+        </div>
+    <div class = "header2-text">
+        <h1>Hi, I'm Ali, an aspiring machine learning engineer. </h1>
+    </div>
+</div>
+<!-- ----------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+                <div class="about-col-1">
+                    <img src = "images/aboutme.jpg">    
+                </div>
+                <div class="about-col-2">
+                    <h1 class = "subtitle"> About Me</h1>
+                    <p>I'm Ali Hussain, an undergraduate EE student at UCSD. I am currently a
+                    2nd year and participating in research at the Existential Robotics Laboratory(ERL). </p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class = "tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class = "tab-links" onclick = "opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, C++, HTML, CSS</li>
+                            <li><span>Data Science Frameworks</span><br>Tensorflow, OpenCV, PyTorch, NumPy, MatPlotLib, Pandas</li>
+                            <li><span>Other Technologies and Frameworks</span><br>Django, Tkinter</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>Sept. 2022 - Current</span><br>Researcher at ERL</li>
+                            <li><span>Sept. 2021 - Dec. 2021 </span><br>IEEE Quarterly Project Participant</li>
+                        </ul>
+                    </div>     
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>Sept. 2021 - Current</span><br>University of California: San Diego</li>
+                            <li><span>Jul. 2022 - Aug. 2022</span><br>Los Angeles Valley College</li>
+                            <li><span>Aug. 2017- Jun. 2021 </span><br>Central Union High School</li>
+                        </ul>
+                    </div>    
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ----------------portfolio -------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class = "work-list">
+            <div class="work">
+                <img src="images/nbaportfolio.jpg" height = "500px" width = "300px">
+                <div class="layer">
+                    <h2>All-NBA Team Classification Model</h2>
+                    <p>Model that predicts if a player will receive an All-NBA
+                    honor.</p>
+                        <a href = "https://github.com/alihuss1017/AllNBAPredictionTool" target = "_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/followalineportfolio.jpg" height = "500px" width="300px">
+                <div class = "layer"> 
+                    <h2>Follow-a-Line Robot</h2>
+                    <p>Robot that follows a line using LEDs and photoresistors with Arduino software.</p>
+                    <a href = "https://epic-tesla-023e33.netlify.app/" target = "_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>   
+            </div>
+            <div class="work">
+                <img src="images/studyportfolio.jpg" height = "500px" width = "300px">
+                <div class="layer">
+                    <h2>Study-Tracking Website</h2>
+                    <p>Website that logs time spent studying varying subjects.</p>
+                        <a href = "https://github.com/and-le/fa21-ieee-qp-team-27" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------contact ----------------- -->
+<div id = "contact">
+    <div class = "container">
+        <div class = "row"> 
+            <div class = "contact-left">
+                <h1 class = "subtitle">Contact Me</h1>
+                <p>alihuss1017@gmail.com</p>
+                <p>6197536018</p>
+                <div class="social-icons">
+                    <a href = "https://twitter.com/AliHHussain_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href ="https://www.reddit.com/u/obliviousdingus/?utm_source=share&utm_medium=ios_app&utm_name=iossmf" target="_blank"><i class="fa-brands fa-reddit"></i></a>
+                    <a href = "https://www.linkedin.com/in/ali-hussain-0439a21b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href = "https://github.com/alihuss1017" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div> 
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type = "text" name = "Name" placeholder = "Your Name" required>
+                    <input type = "email" name = "email" placeholder = "Your Email" required>
+                    <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html> 
