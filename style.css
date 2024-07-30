@@ -102,9 +102,11 @@ nav ul li a:hover::after{
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    align-items: center;
 }
 
 .about-col-1{
+    
     flex-basis:35%;
 }
 .about-col-1 img{
@@ -155,6 +157,9 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style:none;
     margin: 10px 0;
+}
+.tab-contents ul li a i{
+    size: 24px;
 }
 .tab-contents ul li span{
     color:#ff004f;
